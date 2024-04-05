@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web_server" {
-  ami             = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI
+  ami             = "ami-0a699202e5027c10d"  # Amazon Linux 2 AMI
   instance_type   = "t2.micro"  # Change to your desired instance type
   key_name        = "your_key_pair_name"  # Change to your key pair name
   security_groups = ["web_server_sg"]
